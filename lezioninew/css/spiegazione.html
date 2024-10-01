@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    IL CSS
+
+    IL CSS E' UN LINGUAGGIO CHE CONSENTE DI ASSEGNARE PROPRIETA GRAFICHE A DEGLI ELEMENTI
+    SEGUENDO UNO SCHEMA DI PROPRIETA'
+
+    IL CSS PUO ESSERE SCRITTO IN 3 MANIERE
+        - INLINE
+        - INTERNAL
+        - EXTERNAL
+
+    NOI FAREMO FOCUS PER ORA SOLO SULLE MODALITA INLINE E INTERNAL.
+
+    IL FUNZIONAMENTO DEL CSS PER OGNI APPROCCIO E' SEMPRE LO STESSO,
+    E NON CI SONO PROPRIETA ESCLUSIVE PER UN METODO O L'ALTRO.
+
+    L'INLINE E' IL CSS INSERITO DIRETTAMENTE DENTRO IL TAG HTML, LA COMODITA E' LA FACILITA' D'USO, LA PECCA E' LA SCALABILITA'
+    L'INTERNAL E' IL CSS INSERITO IN UN APPOSITO TAG, CHE SFRUTTA I PUNTATORI SPIEGATI NELLA LEZIONE PRECEDENTE
+
+-->
+    <head>
+        <title>Title</title>
+
+        <style>
+            /*PUNTATORE TAG, SOLO NOME TAG */
+            h1 {
+                background-color: red;
+            }
+
+            /*PUNTATORE ID, CON # DAVANTI ID*/
+            #testID {
+                font-size: 20px;
+                font-weight: bold;
+                color: blue;
+            }
+
+            /*PUNTATORE CLASSE, CON . DAVANTI NOMECLASSE*/
+            .testClass{
+                font-size: 24px;
+                text-align: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="font-size: 26px">Test inline</div>
+        <div style="background-color: red">Test inline</div>
+        <div style="color: red">Test inline</div>
+        <div style="width: 300px; background-color: mediumslateblue">Test inline</div>
+
+        <hr>
+
+        <h1>Test internal</h1>
+
+        <div id="testID">Test internal 2</div>
+
+        <div class="testClass">Test internal 3</div>
+        <div class="testClass">Test internal 3</div>
+        <div class="testClass">Test internal 3</div>
+
+
+    </body>
+</html>

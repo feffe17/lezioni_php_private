@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .saluto{
+      background-color: red;
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="provabottone">Ti reindirizza</button>
+  <br>
+  <br>
+  <input type="text" name="nome" placeholder = "Nome persona">
+  <br>
+  <br>
+  <button class="saluto">Ti saluta</button>
+  <h1>ciao</h1>
+  <!--<script>
+    //variabili  
+    let nome = "feffe";
+    //possono essere modificate solo chiamandole
+        nome = "gigi";
+    let eta = 24;
+    let array = [13 , "sasso", "naso"];
+    let gruppo = {
+        stringhe : "ciaociao",
+        numeri : 26,
+        bolean : "true",
+        Array : [34, "sium", "asiago"],
+    };
+    //costante 
+    const indirizzo = "via le mani dal naso 3";
+
+    console.log(nome);
+    console.log(eta);
+    console.log(array[1]);
+    console.log(gruppo);
+    // puntare una cosa in un gruppo
+    console.log(gruppo.Array[2]);
+    console.log(indirizzo);
+  </script>
+  <script>
+      //le operazioni aritmetiche si comportano come in php. la sintassi è la seguente
+      let prova = 2;
+      console.log(prova > 5)
+  </script>
+  <script>
+      let stringa = "studiamo programmazione per non guidare più il furgoncino";
+      let indexofguidare = stringa.indexOf("guidare");
+      console.log(stringa.length);
+      console.log(stringa[2]);
+      console.log(stringa[stringa.length - 1]);
+      console.log(stringa.indexOf("guidare"));
+      console.log(stringa.slice(indexofguidare));
+      console.log(stringa.replace("programmazione" , "crazy time"));
+  </script>
+  <script>
+      let array123 = ["ciao" , "feffe" , 12 , "tanto" , "34", "sium"];
+      //da array a stringa e viceversa con split e join
+      let arraytostring = array123.join(",");
+      let stringaaa = " a, da, in, con, su, per, tra ";
+      let stringatoarray = stringaaa.split(",");
+      /*per aggiungere cose ad un array usare
+      push per aggiungere alla fine
+      pop per rimuovere alla fine (ultimo elemento
+      unshift per aggiungere un valore all'inizio (il primo)
+      shift per rimuovere un valore all'inizio (il primo)
+      */
+      stringatoarray.push("fra");
+      stringatoarray.unshift("di");
+      console.log(array123);
+      console.log(array123[3]);
+      for($i=0 ; $i < array123.length ; $i++) {
+        console.log(array123[$i])
+      }
+      console.log(arraytostring);
+      console.log(stringatoarray);
+  </script>
+  <script>
+      //if else
+      let etaMario = 17;
+      let cognomeMario = "Rossi";
+      if(etaMario >= 18){
+          console.log("Ciao signor " + cognomeMario)
+      }else{
+          console.log("Minori non ammessi")
+      }
+  </script>
+  <script>
+    /*funzioni
+
+     */
+  </script>-->
+  <script>
+    let provabottone = document.querySelector("button.provabottone");
+
+    let saluto = document.querySelector("button.saluto")
+    let titolo = document.querySelector("h1");
+    let input = document.querySelector("input");
+    function saluta(name = "inserisci il tuo nome"){
+      titolo.innerHTML = `Ciao ${name}`;
+    }
+    function redirect(){
+      location.replace("https://www.digieventi.com/feffe/lezioninew/css/progetto_bootstrap/provebtpfeffe.html");
+      return redirect();
+    }
+    provabottone.addEventListener("click", ()=>{
+      redirect();
+    });
+
+    saluto.addEventListener("click", ()=>{
+      saluta(input.value);
+    });
+
+  </script>
+  <script>
+    const chiave = "interessi";
+
+    const persona = {
+      nome: "luca",
+      cognome: "rossi",
+      eta: 26,
+      interessi:["leggere", "football", "giocare alla play",],
+      indirizzo:{
+        via: "via delle betole",
+        civico: 6,
+        provincia: "rm",
+        comune: "roma",
+        cap: "00133",
+      },
+      salutare: function(){
+        console.log(`ciao sono ${persona.nome}`)
+      }
+    };
+
+   persona.nome = "paolo";
+
+    console.log(persona[chiave][2]);
+    persona.salutare();
+  </script>
+
+</body>
+</html>

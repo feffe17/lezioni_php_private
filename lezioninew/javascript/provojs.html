@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>facciamo prove</title>
+    <style>
+        .ContainerMenu{
+            width: 100%;
+            height: 40px;
+            background-color: #011fc6;
+        }
+        .titlePage{
+            width: 15%;
+            height: 100%;
+            color: white;
+            font-size: 35px;
+            border-left: 5px;
+            cursor: pointer;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="ContainerMenu">
+    <div class="titlePage">FACEBOOK</div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    let RefreshTitolo = document.querySelector("div.titlePage")
+
+
+
+    RefreshTitolo.addEventListener("focus", function(){
+        console.log("sono qui");
+    });
+
+    RefreshTitolo.addEventListener("click",()=>{
+        RedHome();
+    })
+
+//____________funzioni______________//
+    function RedHome(){
+        location.replace("https://www.digieventi.com/feffe/lezioninew/javascript/provojs.html")
+    }
+</script>
+</body>
+</html>
